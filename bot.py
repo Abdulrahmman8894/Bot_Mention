@@ -25,7 +25,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**Help Menu of MentionAllBot**\n\nCommand: /mentionall\n__You can use this command with text what you want to mention others.__\n`Example: /mentionall Good Morning!`\n__You can you this command as a reply to any message. Bot will tag users to that replied messsage__.\n\nFollow [Toni-Ex](https://github.com/Tonic990) on Github"
+  helptext = "** Help Menu of MentionAllBot ** \ n \ n الأمر: / noteall \ n __ يمكنك استخدام هذا الأمر مع النص الذي تريد ذكره للآخرين .__ \ n` مثال: / noteall Good Morning! ` \ n __You هل يمكنك هذا الأمر كرد على أي رسالة. سيقوم البوت بوضع علامة على المستخدمين لهذه الرسالة التي تم الرد عليها__. \ n \ n تابع [Toni-Ex] (https://github.com/Tonic990) على Github
   await event.reply(helptext,
                     buttons=(
                       [Button.url('⚜️¦ قناة البوت', 'https://t.me/DARK_EGYPT'),
