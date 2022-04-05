@@ -37,7 +37,7 @@ async def help(event):
 @client.on(events.NewMessage(pattern="^/mentionall ?(.*)"))
 async def mentionall(event):
   if event.is_private:
-    return await event.respond("__This command can be use in groups and channels!__")
+    return await event.respond("__يمكن استخدام هذا الأمر في المجموعات والقنوات!__")
   
   admins = []
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
