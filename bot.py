@@ -52,11 +52,11 @@ async def mentionall(event):
     mode = "text_on_reply"
     msg = event.reply_to_msg_id
     if msg == None:
-        return await event.respond("__I can't mention members for older messages! (messages which are sent before I'm added to group)__")
+        return await event.respond("__لا يمكنني ذكر أعضاء للرسائل القديمة! (الرسائل التي تم إرسالها قبل إضافتي إلى المجموعة)__")
   elif event.pattern_match.group(1) and event.reply_to_msg_id:
     return await event.respond("__Give me one argument!__")
   else:
-    return await event.respond("__Reply to a message or give me some text to mention others!__")
+    return await event.respond("__الرد على رسالة أو إعطائي نصًا لذكر الآخري!__")
   
   if mode == "text_on_cmd":
     usrnum = 0
